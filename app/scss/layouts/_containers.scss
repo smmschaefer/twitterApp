@@ -1,0 +1,33 @@
+div {
+	height: 100%;
+}
+
+#topBar {
+	height: 80px;
+	width: 100%;
+	background: red;
+	color: white;
+	display: inline;
+	
+	p {
+		padding-top: 10px;
+		padding-left: 10px;
+		font-size: 20px;
+	}
+	
+}
+
+.navDiv {
+	display: inline-block;
+	overflow: auto;
+	
+	p {
+		color: red;
+		font-size: 1.4em;
+		padding-top: 5px;
+		padding-left: 1em;
+		padding-right: 2em;
+	}
+}
+
+

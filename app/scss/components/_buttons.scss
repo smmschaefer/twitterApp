@@ -1,0 +1,61 @@
+@-webkit-keyframes btnFade {
+    0%   { background: white; color: red; border: 1px solid black; }
+	50%  { background: white; color: red; border: 1px solid gray; } 
+    100% { background: red; color: white; border: 1px solid white; } 
+}
+
+@keyframes btnFade {
+    0%   { background: white; color: red; border: 1px solid black; }
+	50%  { background: red; color: white; border: 1px solid gray; } 
+    100% { background: red; color: white; border: 1px solid white; } 
+}
+
+
+
+#enterBtn {
+	@include border-radiusPick(5px);
+	
+	margin-top: 30%;
+	height: 5%;
+	width: 10%;
+	border: 2px solid red;
+	background: white;
+	color: red;
+	overflow: hidden;
+	
+	&:hover {
+	    -webkit-animation: btnFade .35s ease-out forwards;
+	    animation: btnFade .35s ease-out forwards;
+	};
+}
+
+.enter {
+	@include border-radiusPick(5px);
+	
+	border: 2px solid red;
+	background: white;
+	color: red;
+	overflow: hidden;
+	
+	&:hover {
+	    -webkit-animation: btnFade .35s ease-in-out forwards;
+	    animation: btnFade .35s ease-in-out forwards;
+	};
+}
+
+@media (max-width: 800px) {
+	#enter {
+		@include border-radiusPick(5px);
+	
+		margin-top: 30%;
+		border: 2px solid red;
+		background: white;
+		color: red;
+		overflow: hidden;
+	
+		&:hover {
+		    -webkit-animation: btnFade .35s ease-in-out forwards;
+		    animation: btnFade .35s ease-in-out forwards;
+		};
+	}
+}

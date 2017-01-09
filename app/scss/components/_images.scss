@@ -1,0 +1,23 @@
+$cardRadius: 30px;
+$cardWidth: 180px;
+$cardHeight: 160px;
+$colorWhite: white;
+$colorFrontR: red;
+$colorFrontB: blue;
+$colorFrontG: green;
+$colorBackR: red;
+$colorBackB: blue;
+$colorBackG: green;
+$colorBack: black;
+$colorBackImg: '/public/../../../img/';
+
+.avatar {
+	width: 140px;
+	height: 150px;
+}
+
+.avatarLanding {
+	width: 140px;
+	height: 150px;
+	float: left;
+}
